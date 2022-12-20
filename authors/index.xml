@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Authors on Sébastien Deleuze</title>
-    <link>https://seb.deleuze.fr/authors/</link>
-    <description>Recent content in Authors on Sébastien Deleuze</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://seb.deleuze.fr/authors/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Authors on Sébastien Deleuze</title><link>https://seb.deleuze.fr/authors/</link><description>Recent content in Authors on Sébastien Deleuze</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://seb.deleuze.fr/authors/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
