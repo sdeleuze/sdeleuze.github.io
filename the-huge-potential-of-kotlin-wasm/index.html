@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  The huge potential of Kotlin/Wasm · seb.deleuze.fr
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Sébastien Deleuze">
+<meta name="description" content="Last week, a preview release of Kotlin/Wasm was announced as part of Kotlin 1.8.20-Beta. For me who has been nudging the Kotlin team to work on WebAssembly support since June 2016, that&rsquo;s a huge step forward even if providing WebAssembly first class support for Kotlin will be a long journey.
+I also decided recently to contribute actively by creating KoWasm, an experimental side project intended to provide WebAssembly Component Model and WASI support for Kotlin/Wasm, with the goal to see those features later supported out of the box.">
+<meta name="keywords" content="blog,developer,spring,kotlin,webassembly">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The huge potential of Kotlin/Wasm"/>
+<meta name="twitter:description" content="Last week, a preview release of Kotlin/Wasm was announced as part of Kotlin 1.8.20-Beta. For me who has been nudging the Kotlin team to work on WebAssembly support since June 2016, that&rsquo;s a huge step forward even if providing WebAssembly first class support for Kotlin will be a long journey.
+I also decided recently to contribute actively by creating KoWasm, an experimental side project intended to provide WebAssembly Component Model and WASI support for Kotlin/Wasm, with the goal to see those features later supported out of the box."/>
+
+<meta property="og:title" content="The huge potential of Kotlin/Wasm" />
+<meta property="og:description" content="Last week, a preview release of Kotlin/Wasm was announced as part of Kotlin 1.8.20-Beta. For me who has been nudging the Kotlin team to work on WebAssembly support since June 2016, that&rsquo;s a huge step forward even if providing WebAssembly first class support for Kotlin will be a long journey.
+I also decided recently to contribute actively by creating KoWasm, an experimental side project intended to provide WebAssembly Component Model and WASI support for Kotlin/Wasm, with the goal to see those features later supported out of the box." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://seb.deleuze.fr/the-huge-potential-of-kotlin-wasm/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-02-13T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://seb.deleuze.fr/the-huge-potential-of-kotlin-wasm/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.471bb4453230edde00223592a6cf1da878eac731887613d87844a0ea2aec8f98.css" integrity="sha256-Rxu0RTIw7d4AIjWSps8dqHjqxzGIdhPYeESg6irsj5g=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      seb.deleuze.fr
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/presentations/">Presentations</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/podcasts/">Podcasts</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://seb.deleuze.fr/the-huge-potential-of-kotlin-wasm/">
+              The huge potential of Kotlin/Wasm
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-02-13T00:00:00Z">
+                February 13, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              7-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/kotlin/">kotlin</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/webassembly/">webassembly</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Last week, a preview release of Kotlin/Wasm was announced as part of <a href="https://kotl.in/1-8-20-Beta#new-kotlin-wasm-target">Kotlin 1.8.20-Beta</a>. For me who has been nudging the Kotlin team to work on WebAssembly support <a href="https://discuss.kotlinlang.org/t/webassembly-support/1722">since June 2016</a>, that&rsquo;s a huge step forward even if providing WebAssembly first class support for Kotlin will be a long journey.</p>
+<p>I also decided recently to contribute actively by creating <a href="https://github.com/sdeleuze/kowasm">KoWasm</a>, an experimental side project intended to provide WebAssembly Component Model and WASI support for Kotlin/Wasm, with the goal to see those features later supported out of the box.</p>
+<p><img src="/images/kotlin-webassembly.png" alt="Kotlin and WebAssembly logos"></p>
+<h2 id="the-upcoming-wasmgc-revolution">
+  The upcoming WasmGC revolution
+  <a class="heading-link" href="#the-upcoming-wasmgc-revolution">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>WebAssembly has been initially designed as a compilation target for low level languages like C, C++ or Rust, or to implement Virtual Machines capable of interpreting dynamic languages like Python, Ruby or even JavaScript.</p>
+<p>But be aware that contributors to the WebAssembly Garbage Collection (GC) proposal are working to make WebAssembly a suitable target for garbage collected languages like Java, Kotlin or Dart and stop using JavaScript as the Web bytecode and give a chance to other languages to be considered as first class options for frontend development without having to compile to JavaScript like TypeScript does. Notice it is already possible for those languages to target WebAssembly by shipping their own custom Garbage Collector with each application, but the generated artifacts are bigger and I am not sure this way of handling things will be competitive when WasmGC will be out.</p>
+<p>WasmGC implementation is an ongoing effort in the 4 major browsers Chrome, Firefox, Edge and Safari, and currently requires a flag to enable it (for example with Chrome or Edge you need to use <code>--js-flags=--experimental-wasm-gc</code> command line argument), so it is not yet available out of the box and that&rsquo;s what prevents any wide adoption of this technology today. But when WasmGC will reach <a href="https://github.com/WebAssembly/proposals#phase-4---standardize-the-feature-wg">phase 4</a> and be available out of the box in most browsers, languages leveraging WasmGC will have a significant competitive advantage.</p>
+<p>Kotlin/Wasm has made an early bet on WasmGC, as well as Google which works on <a href="https://twitter.com/matt_wilkinsonn/status/1619004037193682953">compiling Java to WasmGC in Google Sheets</a> with <a href="https://github.com/google/j2cl">J2CL</a> and on <a href="https://medium.com/dartlang/experimenting-with-dart-and-wasm-ef7f1c065577">Dart</a>.</p>
+<h2 id="frontend-and-full-stack-development">
+  Frontend (and full stack) development
+  <a class="heading-link" href="#frontend-and-full-stack-development">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>While I have never been super convinced by Kotlin/JS which requires the developer to know both Kotlin and JavaScript ecosystems, I think Kotlin/Wasm is the opportunity to reimagine what can be frontend development. Sure Kotlin/Wasm needs to provide good JavaScript interoperability (it does), but this should be optional.</p>
+<p>For now, Kotlin/Wasm provides DOM API, and we will maybe see some Kotlin/Wasm frontend frameworks making it a suitable option for frontend development. I will likely explore how Kotlin/Wasm can be used for frontend combined with a Spring Boot Kotlin/JVM backend to perform full stack development in Kotlin.</p>
+<p>But WebAssembly becomes even more interesting when you take another perspective. What if <a href="https://github.com/JetBrains/compose-jb">Compose for Web</a>, the multiplatform incarnation of Jetpack Compose used on Android, would leverage Kotlin/Wasm instead of Kotlin/JS to perform pixel-perfect Canvas based rendering?</p>
+<p>What if Kotlin/Wasm could power a new kind of <a href="https://jamstack.org/">Jamstack architecture</a> that would use WebAssembly instead of JavaScript (see <a href="https://github.com/varabyte/kobweb">Kobweb</a> currently based on Kotlin/JS for a glimpse of what I mean)?</p>
+<h2 id="webassembly-component-model">
+  WebAssembly Component Model
+  <a class="heading-link" href="#webassembly-component-model">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Another important topic to have in mind to fully appreciate Kotlin/Wasm potential is the <a href="https://github.com/WebAssembly/component-model">WebAssembly Component Model</a> which is going to make it possible to publish components for WebAssembly from any language to any language supporting WebAssembly. The cornerstone of this effort is the <a href="https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md">WIT format</a> which allows to describe imports and exports and to generate language-specific bindings. You can learn more in Luke Wagner keynote <a href="https://www.youtube.com/watch?v=phodPLY8zNE">The path to Components</a>.</p>
+<p>I did the exercise to see <a href="https://github.com/sdeleuze/kowasm/blob/999944fef36b5f488e900c170d735236c7b72387/component-model/src/wasmTest/kotlin/org/kowasm/componentmodel/WitToKotlin.kt">how WIT translates to Kotlin</a>, and the result looks pretty good. For example, WIT <code>variant</code> defined with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>variant filter {
+</span></span><span style="display:flex;"><span>    all,
+</span></span><span style="display:flex;"><span>    none,
+</span></span><span style="display:flex;"><span>    some(list&lt;string&gt;),
+</span></span><span style="display:flex;"><span> }
+</span></span></code></pre></div><p>Translate to the following Kotlin code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">sealed</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Filter</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">object</span> <span style="color:#a6e22e">All</span> : Filter
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">object</span> <span style="color:#a6e22e">None</span> : Filter
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Some</span>(<span style="color:#66d9ef">val</span> value: List&lt;String&gt;): Filter
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>WIT <code>option&lt;string&gt;</code> translates nicely to Kotlin idiomatic handling of option values leveraging <a href="https://kotlinlang.org/docs/null-safety.html">null-safety</a> with <code>String?</code>.</p>
+<p>I also think that <a href="https://kotlinlang.org/docs/coroutines-basics.html">Kotlin Coroutines</a> are going to be a pretty strong competitive advantage to bind <a href="https://github.com/WebAssembly/meetings/blob/main/wasi/2022/presentations/2022-06-16-luke-async.pdf">Component Model async support</a>.</p>
+<p>You can vote for <a href="https://youtrack.jetbrains.com/issue/KT-56605">KT-56605</a> if you are interested in Wasm Component support in Kotlin/Wasm.</p>
+<h2 id="webassembly-package-management-with-warg">
+  WebAssembly package management with warg
+  <a class="heading-link" href="#webassembly-package-management-with-warg">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>You may wonder how WebAssembly components will be published and consumed. An emerging response has been shared recently in <a href="https://www.youtube.com/watch?v=lihQEVhOR58">this great talk</a> by Bailey Hayes and Kyle Brown. Warg is an ongoing effort to standardize WebAssembly package management, and various instances of WebAssembly package repositories will likely be available. I am not sure what amount of decentralization there will be, but the biggest public instances like the upcoming <a href="https://bytecodealliance.org/">Bytecode Alliance</a> one will potentially look a bit like Maven Central for the JVM world or NPM for the JavaScript world.</p>
+<p>A key point is that those WebAssembly package repositories will be polyglot places. You may argue that Maven Central or NPM are used by other languages than Java and JavaScript, but in practice other languages remain in the shadow of the platform language both on producer and consumer side. Warg and WebAssembly are going to bring polyglot components to the next level.</p>
+<p>As shared in my previous blog post <a href="https://seb.deleuze.fr/webassembly-impact-on-programming-languages/">WebAssembly impact on programming languages</a>, I tend to think languages like Rust/C/C++ will be mainly used to produce Wasm components (efficiency, no or very small runtime suitable for the share nothing approach), while languages leveraging WasmGC like Kotlin/Wasm will be mainly used to build applications that will consume those components. Of course, Rust will also be used to create Wasm applications, but my guess is that long term WasmGC languages will dominate for this kind of use case.</p>
+<p>You can vote for <a href="https://youtrack.jetbrains.com/issue/KT-56607">KT-56607</a> to communicate to the Kotlin team that you are interested in fetching WebAssembly component dependencies from warg repositories.</p>
+<h2 id="wasi">
+  WASI
+  <a class="heading-link" href="#wasi">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>To understand what is WASI, I highly recommend reading those 2 amazing blog posts from Lin Clark : <a href="https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/">Standardizing WASI: A system interface to run WebAssembly outside the web</a> and <a href="https://bytecodealliance.org/articles/announcing-the-bytecode-alliance">Announcing the Bytecode Alliance</a>.</p>
+<p>In a nutshell, WASI purpose is to standardize how system interfaces like filesystem, clock, environment variables, command line arguments or standard input/output can be exposed to Wasm applications. There are also other use cases like ML, AI or Cloud storage that could be standardized via WASI. See the list of <a href="https://github.com/WebAssembly/WASI/blob/main/Proposals.md">WASI proposals</a> for more details.</p>
+<p>Kotlin/Wasm does not support yet WASI, but the Kotlin/Wasm team implemented <a href="https://youtrack.jetbrains.com/issue/KT-55589/Basic-support-of-WASI">low level APIs</a> that allow me to progress on an experimental support incubated in the <a href="https://github.com/sdeleuze/kowasm">KoWasm</a> project mentioned previously, with the end-goal of getting WASI support out-of-the-box by Kotlin/Wasm. You can vote for <a href="https://youtrack.jetbrains.com/issue/KT-36172">KT-36172</a> related issue.</p>
+<p>Interestingly, it is possible to leverage <a href="https://kotlinlang.org/docs/multiplatform.html">Kotlin multiplatform</a> libraries like <a href="https://github.com/Kotlin/kotlinx-datetime">kotlinx-datetime</a> or <a href="https://github.com/square/okio">Okio</a> by just providing the platform specific part with WASI.</p>
+<p>The potential of Kotlin/Wasm + WASI is huge. It could provide an alternative to Kotlin/JVM for deploying applications to the Cloud, the Edge or even Serverless functions. It is increasingly used as an alternative to container images, with nano-second instantiation time, increased security and flexible deployment not tide to a specific hardware or OS. That will for sure remind to some of you &ldquo;Write once, run anywhere&rdquo; (WORA) the Java slogan from 1995. If you want to dig deeper into the differences between the Java and WebAssembly, you can read the excellent blog post <a href="https://www.javaadvent.com/2022/12/webassembly-for-the-java-geek.html">WebAssembly for the Java geek</a> written by Edoardo Vacchi.</p>
+<p>The main blocker to realize that vision is the lack of support of WasmGC in pure WASI runtimes like Wasmtime, see <a href="https://github.com/bytecodealliance/wasmtime/issues/5032">wasmtime#5032</a> related issue. For now, the main path to run Kotlin/Wasm WASI application is to leverage <a href="https://nodejs.org/api/wasi.html">Node WASI support</a>.</p>
+<p>An updated WASI roadmap has been recently shared by Dan Gohman:</p>
+<ul>
+<li>Preview1: Support existing users, portability</li>
+<li>Preview2: Rebase WASI on Wit (we are here)</li>
+<li>Preview3: Level up Async: future and stream</li>
+<li>WASI 1.0: Standardization
+If you want to dig more into WASI, I highly recommend <a href="https://www.youtube.com/@sunfishcode/streams">Dan&rsquo;s Youtube channel</a>.</li>
+</ul>
+<h2 id="follow-up">
+  Follow up
+  <a class="heading-link" href="#follow-up">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>If you are interested in learning more about Kotlin/Wasm, come to the <a href="https://wasmio.tech">Wasm I/O conference</a> where Zalim (the Kotlin/Wasm lead) and myself will present a talk introducing <a href="https://wasmio.tech/sessions/introducing-kotlin-wasm/">Kotlin/Wasm</a>. You can also follow me on <a href="https://twitter.com/sdeleuze">Twitter</a> or <a href="https://mastodon.online/@sdeleuze">Mastodon</a> for more news on WebAssembly and Kotlin, and <a href="https://github.com/sdeleuze/kowasm">star the KoWasm repository on GitHub</a>.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sdeleuze" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2022 -
+    
+    2023
+     Sébastien Deleuze 
+    ·
+    
+      Licensed under Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">BY-SA 4.0</a>
+    ·
+    
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js" integrity="sha256-J6/OOU&#43;2KE9SGz&#43;8n2qDJjQjM8MJImfzlE13BImHb&#43;0="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

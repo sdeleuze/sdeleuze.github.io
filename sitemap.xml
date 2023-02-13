@@ -2,17 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://seb.deleuze.fr/tags/kotlin/</loc>
+    <lastmod>2023-02-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://seb.deleuze.fr/posts/</loc>
-    <lastmod>2022-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/</loc>
-    <lastmod>2022-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/tags/</loc>
-    <lastmod>2022-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/the-huge-potential-of-kotlin-wasm/</loc>
+    <lastmod>2023-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/tags/webassembly/</loc>
-    <lastmod>2022-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/webassembly-impact-on-programming-languages/</loc>
     <lastmod>2022-12-20T00:00:00+00:00</lastmod>
@@ -46,9 +52,6 @@
   </url><url>
     <loc>https://seb.deleuze.fr/presentations/spring-native-beta/</loc>
     <lastmod>2021-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seb.deleuze.fr/tags/kotlin/</loc>
-    <lastmod>2020-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/presentations/kotlin-1-4-event-state-kotlin-spring/</loc>
     <lastmod>2020-10-21T00:00:00+00:00</lastmod>

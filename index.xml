@@ -6,7 +6,17 @@
     <description>Recent content on seb.deleuze.fr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The huge potential of Kotlin/Wasm</title>
+      <link>https://seb.deleuze.fr/the-huge-potential-of-kotlin-wasm/</link>
+      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://seb.deleuze.fr/the-huge-potential-of-kotlin-wasm/</guid>
+      <description>Last week, a preview release of Kotlin/Wasm was announced as part of Kotlin 1.8.20-Beta. For me who has been nudging the Kotlin team to work on WebAssembly support since June 2016, that&amp;rsquo;s a huge step forward even if providing WebAssembly first class support for Kotlin will be a long journey.
+I also decided recently to contribute actively by creating KoWasm, an experimental side project intended to provide WebAssembly Component Model and WASI support for Kotlin/Wasm, with the goal to see those features later supported out of the box.</description>
+    </item>
+    
     <item>
       <title>WebAssembly impact on programming languages</title>
       <link>https://seb.deleuze.fr/webassembly-impact-on-programming-languages/</link>
