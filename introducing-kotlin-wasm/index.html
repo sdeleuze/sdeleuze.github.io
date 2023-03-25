@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  Introducing Kotlin/Wasm · seb.deleuze.fr
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Sébastien Deleuze">
+<meta name="description" content="This blog post is a refined transcription of the presentation Zalim Bashorov and I gave at Wasm I/O 2023 to introduce Kotlin/Wasm. I will later add a video to the recording when available.
+Zalim Hi, everyone! I’m Zalim. I’m writing Kotlin in Kotlin at JetBrains and leading Kotlin/Wasm. We are going to have a quick journey around Kotlin/Wasm, we will see what the possibilities are, and also have a look at the inside.">
+<meta name="keywords" content="blog,developer,spring,kotlin,webassembly">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introducing Kotlin/Wasm"/>
+<meta name="twitter:description" content="This blog post is a refined transcription of the presentation Zalim Bashorov and I gave at Wasm I/O 2023 to introduce Kotlin/Wasm. I will later add a video to the recording when available.
+Zalim Hi, everyone! I’m Zalim. I’m writing Kotlin in Kotlin at JetBrains and leading Kotlin/Wasm. We are going to have a quick journey around Kotlin/Wasm, we will see what the possibilities are, and also have a look at the inside."/>
+
+<meta property="og:title" content="Introducing Kotlin/Wasm" />
+<meta property="og:description" content="This blog post is a refined transcription of the presentation Zalim Bashorov and I gave at Wasm I/O 2023 to introduce Kotlin/Wasm. I will later add a video to the recording when available.
+Zalim Hi, everyone! I’m Zalim. I’m writing Kotlin in Kotlin at JetBrains and leading Kotlin/Wasm. We are going to have a quick journey around Kotlin/Wasm, we will see what the possibilities are, and also have a look at the inside." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://seb.deleuze.fr/introducing-kotlin-wasm/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-03-25T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://seb.deleuze.fr/introducing-kotlin-wasm/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.471bb4453230edde00223592a6cf1da878eac731887613d87844a0ea2aec8f98.css" integrity="sha256-Rxu0RTIw7d4AIjWSps8dqHjqxzGIdhPYeESg6irsj5g=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.110.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      seb.deleuze.fr
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/presentations/">Presentations</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/podcasts/">Podcasts</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://seb.deleuze.fr/introducing-kotlin-wasm/">
+              Introducing Kotlin/Wasm
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-03-25T00:00:00Z">
+                March 25, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              14-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/kotlin/">kotlin</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/webassembly/">webassembly</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>This blog post is a refined transcription of the presentation Zalim Bashorov and I gave at <a href="https://wasmio.tech/">Wasm I/O</a> 2023 to introduce Kotlin/Wasm. I will later add a video to the recording when available.</p>
+<p><img src="/images/wasmio23/slide1.png" alt=""></p>
+<p><strong>Zalim</strong> Hi, everyone! I’m Zalim. I’m writing Kotlin in Kotlin at JetBrains and leading Kotlin/Wasm. We are going to have a quick journey around Kotlin/Wasm, we will see what the possibilities are, and also have a look at the inside.</p>
+<p><strong>Sébastien</strong> Hey, I am Sébastien Deleuze, I work as a Spring Framework committer at VMware. I led the introduction of Kotlin and GraalVM native images in Spring, but today, I am going to talk about the work I do on Kotlin/Wasm as a side project.</p>
+<p><img src="/images/wasmio23/slide2.png" alt=""></p>
+<p>Let’s begin by a quick presentation of the language. Kotlin is a modern statically-typed and garbage-collected language. It manages to be both concise and expressive, has a pragmatic mindset while remaining elegant, and has found in my opinion the right balance between imperative and functional programming. One of its key features is that it turns the billion dollar mistake (null references) to build-time null-safety to check the presence of a value.</p>
+<p><img src="/images/wasmio23/slide3.png" alt=""></p>
+<p>The widest adoption of Kotlin is on mobile, since Google has chosen Kotlin as the official language for Android. On the server-side, Java remains the leader but Kotlin has a significant market share, and a lot of Spring developers are using Kotlin to develop their Spring Boot applications. Thanks to its DSL and scripting capabilities, Kotlin has also been chosen as the language used to describe Gradle builds.</p>
+<p><img src="/images/wasmio23/slide4.png" alt=""></p>
+<p>Even if most successful use-cases are targeting the JVM, Kotlin has dedicated support for developing multiplatform projects. You write common code that will be shared, then add the required specific bits for the platform(s) you target (JVM, JavaScript, Native). Its tooling is mostly JVM based. Kotlin provides a compiler plugin mechanism capable of powerful build-time transformations.</p>
+<p><img src="/images/wasmio23/slide5.png" alt=""></p>
+<p>Let me share a story with you. Since I work in this industry, I have always tried to find solutions to avoid tech silos and to allow sharing code for various usages. So, when I saw the ongoing standardization of WebAssembly in 2016, I immediately thought it would be a great opportunity for Kotlin. I <a href="https://discuss.kotlinlang.org/t/webassembly-support/1722">shared this idea with the Kotlin team and community</a>, and have been dreaming of dedicated support for WebAssembly in Kotlin since.</p>
+<p><img src="/images/wasmio23/slide6.png" alt=""></p>
+<p>After an initial WebAssembly support prototype in Kotlin/Native leveraging the LLVM toolchain, the Kotlin team chose to introduce dedicated support for WebAssembly by targeting WasmGC in a brand new dedicated compiler. Kotlin/Wasm was born and reached experimental status early 2023, a few weeks ago.</p>
+<p><img src="/images/wasmio23/slide7.png" alt=""></p>
+<p>Kotlin/Wasm has been designed to provide a competitive runtime footprint and performance, in order to be able to target use cases where that’s critical. For example, the footprint is super important for public websites, and the great potential of the platform is illustrated by this super tiny 3K wasm file generated for a simple hello world like this.</p>
+<p>Zalim, can you share more about this shiny new Kotlin to Wasm compiler?</p>
+<p><img src="/images/wasmio23/slide8.png" alt=""></p>
+<p><strong>Zalim</strong> Sure! Thanks Seb!</p>
+<p>We built the new compiler from scratch and targeting the next goals. We wanted to have fast compilation, because we think it’s important to have a sub-second round trip time and to achieve that we generate binaries directly and later going to make it incremental. We don’t do much optimizations during development but use Binaryen to optimize release builds. We also wanted to have small binaries and great integration with hosts, for example to avoid leaks with cross module links. And modern shiny proposals help us a lot with it.</p>
+<p><img src="/images/wasmio23/slide9.png" alt=""></p>
+<p>We are using the following proposals.</p>
+<p><strong>Reference types</strong> which introduces basic reference types and instructions to work with them. It’s already part of the core specification and implemented by most VMs.</p>
+<p>Next, the <strong>exception handling proposal</strong>, as you can guess, introduces something like exceptions and a way to throw and catch them. It’s in phase 3 out of 4, but it’s available by default in all major browsers.</p>
+<p><strong>Typed Function References</strong>, the name speaks for itself. It adds better typing for function reference and the instruction to call functions by reference. It’s in phase 3.</p>
+<p>And last but not least – <strong>Garbage Collection proposal</strong>, interestingly the proposal has only one sentence about garbage collection. But it introduces high-level concepts required for languages and runtimes with GC. Such as structures, fields, references, and so on. Also in phase 3.</p>
+<p><img src="/images/wasmio23/slide10.png" alt=""></p>
+<p>We have great news to share!  Origin trial for WasmGC in Chrome is open for registration starting today. It allows you to turn on Wasm GC for your site. Follow <a href="https://zal.im/tryWasmGC">this link</a> for more information.</p>
+<p><img src="/images/wasmio23/slide11.png" alt=""></p>
+<p>WebAssembly evolves continuously, and there are many new proposals. Some of them are interesting to us, and even more, we are experimenting with some of them. Let’s quickly look at them. There are many proposals aimed to improve <strong>interop</strong> with the external world. <strong>Performance</strong> is important as well. You can say nowadays disk space is cheap, and networks are fast, but there are use cases where <strong>size</strong> is still important, for example the web.</p>
+<p>I’d like to highlight a few proposals:</p>
+<ul>
+<li>First <strong>Component Model</strong> because I personally think it’s important for the whole wasm ecosystem.</li>
+<li>Next, <strong>Multiple Memory</strong> – because it can unblock some interop cases, for example, between different languages.</li>
+<li>And, <strong>stringref</strong> proposal – I’ll explain it a bit later.</li>
+</ul>
+<p>Let’s take a deeper look at some Kotlin/Wasm implementation details.</p>
+<p><img src="/images/wasmio23/slide12.png" alt=""></p>
+<p>We start from <code>kotlin.Any</code>, it&rsquo;s the base type for everything in Kotlin. Like <code>java.lang.Object</code> but better :) From the Kotlin developer point of view it has only 3 functions and no fields.</p>
+<p><img src="/images/wasmio23/slide13.png" alt=""></p>
+<p>But actually from a Wasm point-of-view, it’s structured with 4 fields, so every instance of <code>Any</code> has these 4 fields. \</p>
+<p>Vtable field refers on vtable structure for the specific class, now it’s Any’s vtable. All instances of <code>Any</code> shares one instance of the vtable structure with references to the specific function implementations. Virtual table used for dispatch virtual calls.</p>
+<p><img src="/images/wasmio23/slide14.png" alt=""></p>
+<p>Let’s introduce another class <code>Foo</code> extending <code>Any</code> with one more field. In Wasm we extend <code>Any</code> structure, repeat the fields from Any, and introduce the new one. We also want to change some methods and add a new one. To achieve that, we introduce a new virtual table and change the type of original vtable field to a more specific one to avoid casts while accessing the new vtable field. In the new vtable, we change the reference for toString and introduce a new field <code>bar</code> for the new method.</p>
+<p><img src="/images/wasmio23/slide15.png" alt="">
+Ok, how to access fields and call methods? Accessing fields is simple. Say we have a local variable d referencing an instance of <code>Foo</code>. We have a stack for values and instructions to execute. First we need to put a reference to the stack using local.get. Then we use struct.get to access the field. It takes the reference from the stack, read the field and put the value to the stack. Easy.</p>
+<p><img src="/images/wasmio23/slide16.png" alt=""></p>
+<p>To do a virtual call, we need a bit more. We have the same variable d with an instance of <code>Foo</code>, and now we want to call the method <code>bar</code>. We put d on the stack 2 times. The first is an argument of the method. The second will be used to reach the method. Next, we read vtable field from the instance. Then, read <code>bar</code> from vtable. And finally we can call it and see result to the stack.</p>
+<p><img src="/images/wasmio23/slide17.png" alt=""></p>
+<p>For comparison, a static call of function we know at compile time requires only 1 instruction. Of course, if a function has parameters, we also must put arguments on the stack.</p>
+<p><img src="/images/wasmio23/slide18.png" alt=""></p>
+<p>Kotlin also has the concept of interfaces, and it’s much trickier. Let’s say, the same class <code>Foo</code>, is implementing interfaces Timer, Logger, and maybe something else. So, we introduce a new structure ITables_1 with fields for each implemented interface. For each interface, we have a separate structure similar to vtables with references to actual implementations. Calling interface methods is similar to virtual ones, but needs slightly more instructions.</p>
+<p><img src="/images/wasmio23/slide19.png" alt=""></p>
+<p>Here is a comparison of different calls. It gives a good sense of the cost of calls, but be careful &ndash; it does not necessarily mean that, for example, every virtual call is 5 times slower than every static call. There are many aspects that could affect your runtime performance.</p>
+<p><img src="/images/wasmio23/slide20.png" alt=""></p>
+<p>Let’s move to string internals. Most real-world applications work with strings a lot. So string implementation may have a big influence on the performance and memory usage of an application. At the start, we had a simple naive implementation which is just a wrapper over an array of chars. And it’s good both in terms of memory footprint and performance, except for concatenation. It’s a popular operation over strings. Doing concatenation over default strings, especially in hot paths, is considered bad practice in many languages, and those languages have special types for such cases, like StringBuilder in Kotlin. Anyway, writing a concatenation is much simpler, and it’s easy to underestimate the hotness of code.</p>
+<p><img src="/images/wasmio23/slide21.png" alt=""></p>
+<p>So, to optimize this use case we, changed the String representation by adding optional references to the prefix and length. Assume we have two strings WASM and IO. If we concatenate them we will get an object referencing the left string and share the array with the right one. It could be chained like this, until we fold it. It’s folded on demand on all other operations Now it’s good on concatenations. In the future, we can consider improving builtin String for over cases but there is a better option.</p>
+<p><img src="/images/wasmio23/slide22.png" alt=""></p>
+<p>This beter option is the <strong>stringref proposal.</strong></p>
+<p>The preliminary results of our experiments are promising:</p>
+<ul>
+<li>60 times faster on interop microbenchmarks</li>
+<li>And up to 3 times faster on DBMonster (see benchmark <a href="https://zal.im/wasm/dbmonster/">without stringref</a> versus<a href="https://zal.im/wasm/dbmonster-stringref/"> with stringref</a>) which works a lot with the DOM</li>
+</ul>
+<p><img src="/images/wasmio23/slide23.png" alt=""></p>
+<p>Let’s move out and look at what is already possible to do with Kotlin/Wasm and the exciting related opportunities. It is Jetpack Compose, a declarative UI toolkit in Kotlin, developed by Google for Android</p>
+<p><img src="/images/wasmio23/slide24.png" alt=""></p>
+<p>Some time ago, a team in JetBrains took it and made it multiplatform</p>
+<p><img src="/images/wasmio23/slide25.png" alt=""></p>
+<p>So now, you can write multiplatform application and use Compose for UIs by writing code like this slide.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/m6FlSWFlhzw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>And it now works with Kotlin/Wasm! Check it out! It’s a demo originally built for desktop but run inside the browser, you can follow <a href="http://zal.im/wasmio/">this link</a> and play with the live demo. It requires enabling WebAssembly GC support (for example by going to <code>chrome://flags/#enable-webassembly-garbage-collection</code> in Chrome) and works in Chrome and Firefox latest stable versions.</p>
+<p><img src="/images/wasmio23/slide27.png" alt=""></p>
+<p>Even more, you will soon be able to debug it over Kotlin sources, inspect local variables and call stack, etc. Now it’s your turn to show cool things, Seb.</p>
+<p><img src="/images/wasmio23/slide28.png" alt=""></p>
+<p><strong>Sébastien</strong> Thanks Zalim!</p>
+<p>Kotlin/Wasm targets for now mostly web browsers, but I think it has a huge potential for other kinds of workloads. So earlier this year, I took the decision to create a new side project to explore this in collaboration with the Kotlin/Wasm team. That’s also for me a fun way to grow my expertise on what could be possible with WebAssembly, Java and Spring. So today, I am pleased to introduce KoWasm.</p>
+<p><img src="/images/wasmio23/slide29.png" alt=""></p>
+<p>KoWasm&rsquo;s goal is to explore server-side and full stack development with Kotlin and WebAssembly. It leverages WASI to access system resources and WebAssembly Component Model for the interoperability.</p>
+<p><img src="/images/wasmio23/slide30.png" alt=""></p>
+<p>The vision behind KoWasm is not limited to Kotlin, and is an opinionated anticipation of what could be the WebAssembly ecosystem in the future.</p>
+<p>I tend to think that once WasmGC will be available in browsers and pure WebAssembly runtimes, we will gradually see more and more applications written with languages targeting WasmGC like Kotlin, Dart or Java.  WebAssembly could be used to deploy workloads everywhere: browser, cloud, edge with business logic easily shared.</p>
+<p>Given WebAssembly “share nothing” approach, WebAssembly components will IMO mostly be implemented with languages closer to the metal, with no or very little runtime, like Rust, Zig, C and C++. Those components would be exposed via warg repositories, a bit like NPM for JavaScript or Maven Central for the JVM, but in a more decentralized fashion.</p>
+<p><img src="/images/wasmio23/slide31.png" alt=""></p>
+<p>KoWasm provides and documents on <a href="https://kowasm.org/api/">https://kowasm.org/api/</a> APIs designed to allow building server-side applications.</p>
+<p>The WASI module for now leverages the low level WASI Preview1 ABI and exposes it with a Kotlin API inspired from the higher-level WASI Preview2 API. Later the goal would be to have WASI supported directly in Kotlin/Wasm.</p>
+<p>KoWasm also exposes a web server API that allows to define HTTP routes and handlers in functional style. A lightweight HTTP client usable on frontend or backend will likely be included as well.</p>
+<p><img src="/images/wasmio23/slide32.png" alt=""></p>
+<p>If we have a deeper look to the WASI module, it is implemented by using a memory allocator API provided by Kotlin Wasm. It allows to make a bridge between WasmGC and the linear memory, and also leverages Kotlin/Wasm capability to import Wasm functions.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/SQRJWriPc2s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Let see a demo of what it looks like to create a server-side application with KoWasm.</p>
+<p>So basically you create a Kotlin multiplatform project, indicate that it targets Wasm, and declare a few dependencies on KoWasm and some Kotlin multiplatform libraries. We can then see our domain model illustrated here by the User data class, with related validation logic created with the <a href="https://github.com/konform-kt/konform">Konform</a> multiplatform library. Such logic can be shared between the frontend and the backend. We also have a “fake” UserService class that exposes findAll and findOne functions.</p>
+<p>We then create our server-side web application with a DSL where we declare HTTP routes and define HTML content with a Kotlin DSL inspired from Spring functional APIs where we can mix a declarative API with full autocomplete with regular Kotlin code like users.forEach. For now this web application runs via NodeJS WebAssembly support, but it will shortly require only WASI socket support.</p>
+<p>We then compile it via Gradle and Kotlin/Wasm compiler to a couple of Wasm and JavaScript files, and run it via Node.js with few experimental parameters.</p>
+<p><img src="/images/wasmio23/slide34.png" alt=""></p>
+<p>For now, we deploy KoWasm applications to Node.js because we need a runtime that supports both WASI and WasmGC. But as soon as WebAssembly runtimes like Wasmtime or WasmEdge start to support the garbage collection proposal, we will be able to target those runtimes, and implement HTTP support purely using WASI, no JavaScript or Node.js API involved. Deployment could target Docker via its Wasm support, Kubernetes, Cloud or Edge platforms.</p>
+<p>The key point here in terms of efficiency, security and flexibility, is that we will be able to deploy directly a Wasm file that leverages WASI instead of a container and its operating system layer.</p>
+<p>Combined with capability-based security and micro-seconds instantiation time, it is going to be in my opinion a game changer for server-side workloads.</p>
+<p><img src="/images/wasmio23/slide35.png" alt=""></p>
+<p>We have begun to think about how WIT, the format powering WebAssembly Component Model, would translate to Kotlin. And it looks like a pretty good match so far.</p>
+<p>For example, WIT records can translate conceptually to Kotlin data classes.</p>
+<p>WIT options translate nicely to Kotlin null-safety, and we can even use parameter default values to provide a better developer experience.</p>
+<p><img src="/images/wasmio23/slide36.png" alt="">
+WIT variants can translate to Kotlin sealed interfaces or classes.</p>
+<p><img src="/images/wasmio23/slide37.png" alt="">
+Sometimes, the matching between WIT and Kotlin could be more involved. For example, we are thinking about translating WIT results to Kotlin exceptions as shown in this code sample.</p>
+<p><img src="/images/wasmio23/slide38.png" alt="">
+Let’s now talk about the frontend. Compose for Web provides in a nutshell 2 ways of drawing the GUI:</p>
+<ul>
+<li>Canvas-based pixel-perfect rendering</li>
+<li>HTML with DOM based rendering</li>
+</ul>
+<p>While the first one is ok for let’s say build backoffices, for public websites, I tend to think we should keep using HTML lightweight rendering. Compose for Web allows to target the DOM to build reactive interfaces as shown in the code sample above.</p>
+<p><img src="/images/wasmio23/slide39.png" alt=""></p>
+<p>This is for now just an idea, but my bet is that it could be possible to evolve Compose for Web which is currently designed as a frontend framework, to a full stack one. I would even say to a server-side first one.</p>
+<p>In a sense, it would be Kotlin/Wasm reinterpretation of modern <a href="https://jamstack.org/">Jamstack</a> solutions we see in the JavaScript world, providing a unified backend + frontend web framework.</p>
+<p>The principle would be to use Compose for Web API as a server-side templating system, and to extract via a Kotlin Compiler plugin the listeners and related reactive state management code</p>
+<p>to send to the frontend only this limited subset of the infrastructure to resume the HTML rendering done initially on server-side to add the required listeners.</p>
+<p><img src="/images/wasmio23/slide40.png" alt=""></p>
+<p>Let’s finish by talking about what’s next.</p>
+<p>The general availability of WasmGC in browsers should happen soon and is going to be the next big step driving Kotlin/Wasm adoption.</p>
+<p>Kotlin/Wasm is going to reduce its footprint via various optimizations. Compose is probably going to be one of the first major libraries taking advantage of Kotlin/Wasm. Kotlin/Wasm is likely going to target standalone runtimes like Wasmtime and WasmEdge, and is going to mature from experimental to alpha status.</p>
+<p>On the KoWasm side, 0.1 release is expected around May. More work will happen on component model and leveraging WASI Preview2+. And I would explore server-side rendering with Compose in collaboration with Jetbrains team and <a href="https://github.com/varabyte/kobweb">KobWeb</a> project lead David Herman.</p>
+<p><img src="/images/wasmio23/slide41.png" alt=""></p>
+<p>You can learn more about Kotlin/Wasm <a href="https://kotl.in/wasm">here</a> and follow <a href="https://twitter.com/bashorov">Zalim</a> and <a href="https://twitter.com/sdeleuze">me</a> for fresh news about upcoming progress. Thanks!</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2022 -
+    
+    2023
+     Sébastien Deleuze 
+    ·
+    
+      Licensed under Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">BY-SA 4.0</a>
+    ·
+    
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js" integrity="sha256-J6/OOU&#43;2KE9SGz&#43;8n2qDJjQjM8MJImfzlE13BImHb&#43;0="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script data-goatcounter="https://sdeleuze.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
