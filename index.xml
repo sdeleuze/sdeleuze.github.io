@@ -13,7 +13,7 @@
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://seb.deleuze.fr/introducing-kotlin-wasm/</guid>
-      <description>This blog post is a refined transcription of the presentation Zalim Bashorov and I gave at Wasm I/O 2023 to introduce Kotlin/Wasm. The recording is also available below.
+      <description>This blog post is a refined transcription of the presentation Zalim Bashorov and I gave at Wasm I/O 2023 to introduce Kotlin/Wasm. The recording is also available here.
 Intro Link to heading Zalim Hi, everyone! I’m Zalim. I’m writing Kotlin in Kotlin at JetBrains and leading Kotlin/Wasm. We are going to have a quick journey around Kotlin/Wasm. We will see what the possibilities there are and also have a look at the inside.</description>
     </item>
     
