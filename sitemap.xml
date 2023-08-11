@@ -2,29 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://seb.deleuze.fr/introducing-kotlin-wasm/</loc>
-    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://seb.deleuze.fr/tags/kotlin/</loc>
+    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/podcasts/</loc>
+    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/</loc>
+    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/tags/</loc>
+    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/podcasts/talking-kotlin-webassembly/</loc>
+    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/tags/webassembly/</loc>
+    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/tags/crac/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/tags/graalvm/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/presentations/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/tags/spring/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/presentations/springio-2023-keynote/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/introducing-kotlin-wasm/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/posts/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://seb.deleuze.fr/</loc>
-    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seb.deleuze.fr/tags/</loc>
-    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seb.deleuze.fr/tags/webassembly/</loc>
-    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://seb.deleuze.fr/from-spring-native-to-spring-boot-3/</loc>
     <lastmod>2023-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://seb.deleuze.fr/tags/spring/</loc>
-    <lastmod>2023-02-23T00:00:00+00:00</lastmod>
+    <loc>https://seb.deleuze.fr/presentations/springone-essentials-2023-native-keynote/</loc>
+    <lastmod>2023-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/the-huge-potential-of-kotlin-wasm/</loc>
     <lastmod>2023-02-13T00:00:00+00:00</lastmod>
@@ -32,19 +53,10 @@
     <loc>https://seb.deleuze.fr/webassembly-impact-on-programming-languages/</loc>
     <lastmod>2022-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://seb.deleuze.fr/presentations/</loc>
-    <lastmod>2022-07-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://seb.deleuze.fr/presentations/webassembly-developper-experience/</loc>
     <lastmod>2022-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/podcasts/bootiful-podcast-graalvm-webassembly/</loc>
-    <lastmod>2022-06-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seb.deleuze.fr/tags/graalvm/</loc>
-    <lastmod>2022-06-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://seb.deleuze.fr/podcasts/</loc>
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/new-aot-engine-brings-spring-native-to-the-next-level/</loc>

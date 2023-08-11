@@ -6,7 +6,25 @@
     <description>Recent content in Presentations on seb.deleuze.fr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/presentations/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/presentations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring I/O 2023 Keynote - Scale To Zero</title>
+      <link>https://seb.deleuze.fr/presentations/springio-2023-keynote/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://seb.deleuze.fr/presentations/springio-2023-keynote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring One Essentials 2023 Keynote - Spring and GraalVM</title>
+      <link>https://seb.deleuze.fr/presentations/springone-essentials-2023-native-keynote/</link>
+      <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://seb.deleuze.fr/presentations/springone-essentials-2023-native-keynote/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>WebAssembly Developper Experience presentation</title>
       <link>https://seb.deleuze.fr/presentations/webassembly-developper-experience/</link>
