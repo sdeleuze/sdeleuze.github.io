@@ -6,7 +6,16 @@
     <description>Recent content in Posts on seb.deleuze.fr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Runtime efficiency with Spring (today and tomorrow)</title>
+      <link>https://seb.deleuze.fr/runtime-efficiency-with-spring/</link>
+      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://seb.deleuze.fr/runtime-efficiency-with-spring/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Introducing Kotlin/Wasm</title>
       <link>https://seb.deleuze.fr/introducing-kotlin-wasm/</link>
