@@ -1,101 +1,101 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>graalvm on seb.deleuze.fr</title>
-    <link>https://seb.deleuze.fr/tags/graalvm/</link>
-    <description>Recent content in graalvm on seb.deleuze.fr</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/tags/graalvm/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Devoxx 2023: GraalVM Native Image panel</title>
-      <link>https://seb.deleuze.fr/presentations/devoxx-2023-graalvm-panel/</link>
-      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/devoxx-2023-graalvm-panel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spring I/O 2023 Keynote - Scale To Zero</title>
-      <link>https://seb.deleuze.fr/presentations/springio-2023-keynote/</link>
-      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/springio-2023-keynote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spring One Essentials 2023 Keynote - Spring and GraalVM</title>
-      <link>https://seb.deleuze.fr/presentations/springone-essentials-2023-native-keynote/</link>
-      <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/springone-essentials-2023-native-keynote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bootiful podcast on GraalVM, AOT and WebAssembly </title>
-      <link>https://seb.deleuze.fr/podcasts/bootiful-podcast-graalvm-webassembly/</link>
-      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/podcasts/bootiful-podcast-graalvm-webassembly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SpringOne 2021 - Spring Native</title>
-      <link>https://seb.deleuze.fr/presentations/springone-2021-spring-native/</link>
-      <pubDate>Wed, 22 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/springone-2021-spring-native/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Announcing Spring Native beta video</title>
-      <link>https://seb.deleuze.fr/presentations/spring-native-beta/</link>
-      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/spring-native-beta/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Electro Monkeys 48 - Les défis de Java et du cloud natif</title>
-      <link>https://seb.deleuze.fr/podcasts/electro-monkeys-graalvm/</link>
-      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/podcasts/electro-monkeys-graalvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Oracle Developer Live - The Path Towards Spring Boot Native Applications</title>
-      <link>https://seb.deleuze.fr/presentations/oracle-spring-boot-native/</link>
-      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/oracle-spring-boot-native/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SpringOne 2020 keynote - Native applications</title>
-      <link>https://seb.deleuze.fr/presentations/springone-2020-native-keynote/</link>
-      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/springone-2020-native-keynote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Devoxx 2018 - Spring Boot with Kotlin, functional configuration and GraalVM</title>
-      <link>https://seb.deleuze.fr/presentations/devoxx-2018-spring-kotlin-graalvm/</link>
-      <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/devoxx-2018-spring-kotlin-graalvm/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>graalvm on seb.deleuze.fr</title>
+        <link>https://seb.deleuze.fr/tags/graalvm/</link>
+        <description>Recent content in graalvm on seb.deleuze.fr</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/tags/graalvm/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>Devoxx 2023: GraalVM Native Image panel</title>
+            <link>https://www.youtube.com/watch?v=isr44p7eplQ</link>
+            <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=isr44p7eplQ</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Spring I/O 2023 Keynote - Scale To Zero</title>
+            <link>https://www.youtube.com/watch?v=IgmeFeTU1a4&amp;t=1111s</link>
+            <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=IgmeFeTU1a4&amp;t=1111s</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Spring One Essentials 2023 Keynote - Spring and GraalVM</title>
+            <link>https://www.youtube.com/watch?v=4qaMKTPTQU8&amp;t=1526s</link>
+            <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=4qaMKTPTQU8&amp;t=1526s</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Bootiful podcast on GraalVM, AOT and WebAssembly </title>
+            <link>https://bootifulpodcast.podbean.com/e/spring-framework-contributor-sebastien-deleuze-on-graalvm-aot-project-leyden-and-webassembly/</link>
+            <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+            
+            <guid>https://bootifulpodcast.podbean.com/e/spring-framework-contributor-sebastien-deleuze-on-graalvm-aot-project-leyden-and-webassembly/</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>SpringOne 2021 - Spring Native</title>
+            <link>https://youtu.be/TXyg6Nm4ZpQ</link>
+            <pubDate>Wed, 22 Sep 2021 00:00:00 +0000</pubDate>
+            
+            <guid>https://youtu.be/TXyg6Nm4ZpQ</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Announcing Spring Native beta video</title>
+            <link>https://www.youtube.com/watch?v=96n_YpGx-JU</link>
+            <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=96n_YpGx-JU</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Electro Monkeys 48 - Les défis de Java et du cloud natif</title>
+            <link>https://medium.com/electro-monkeys/48-les-d%C3%A9fis-de-java-et-du-cloud-natif-graalvm-native-image-avec-s%C3%A9bastien-deleuze-19429c67c1ce</link>
+            <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+            
+            <guid>https://medium.com/electro-monkeys/48-les-d%C3%A9fis-de-java-et-du-cloud-natif-graalvm-native-image-avec-s%C3%A9bastien-deleuze-19429c67c1ce</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Oracle Developer Live - The Path Towards Spring Boot Native Applications</title>
+            <link>https://www.youtube.com/watch?v=DyWlThGX6Ic</link>
+            <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=DyWlThGX6Ic</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>SpringOne 2020 keynote - Native applications</title>
+            <link>https://youtu.be/cql2hpGxtN8?t=923</link>
+            <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+            
+            <guid>https://youtu.be/cql2hpGxtN8?t=923</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Devoxx 2018 - Spring Boot with Kotlin, functional configuration and GraalVM</title>
+            <link>https://www.youtube.com/watch?v=oN3QOsZ1KAw</link>
+            <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=oN3QOsZ1KAw</guid>
+            <description></description>
+        </item>
+        
+    </channel>
 </rss>

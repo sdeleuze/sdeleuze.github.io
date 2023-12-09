@@ -1,131 +1,131 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>kotlin on seb.deleuze.fr</title>
-    <link>https://seb.deleuze.fr/tags/kotlin/</link>
-    <description>Recent content in kotlin on seb.deleuze.fr</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 29 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Talking Kotlin: Kotlin/WASM in The Browser and Beyond</title>
-      <link>https://seb.deleuze.fr/podcasts/talking-kotlin-webassembly/</link>
-      <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/podcasts/talking-kotlin-webassembly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Introducing Kotlin/Wasm</title>
-      <link>https://seb.deleuze.fr/introducing-kotlin-wasm/</link>
-      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/introducing-kotlin-wasm/</guid>
-      <description>This blog post is a refined transcription of the presentation Zalim Bashorov and I gave at Wasm I/O 2023 to introduce Kotlin/Wasm. The recording is also available on YouTube.
+    <channel>
+        <title>kotlin on seb.deleuze.fr</title>
+        <link>https://seb.deleuze.fr/tags/kotlin/</link>
+        <description>Recent content in kotlin on seb.deleuze.fr</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Thu, 29 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>Talking Kotlin: Kotlin/WASM in The Browser and Beyond</title>
+            <link>https://talkingkotlin.com/Kotlin-for-WebAssembly-in-the-browser-and-beyond/</link>
+            <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
+            
+            <guid>https://talkingkotlin.com/Kotlin-for-WebAssembly-in-the-browser-and-beyond/</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Introducing Kotlin/Wasm</title>
+            <link>/introducing-kotlin-wasm/</link>
+            <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+            
+            <guid>/introducing-kotlin-wasm/</guid>
+            <description>This blog post is a refined transcription of the presentation Zalim Bashorov and I gave at Wasm I/O 2023 to introduce Kotlin/Wasm. The recording is also available on YouTube.
 Intro Link to heading Zalim Hi, everyone! I’m Zalim. I’m writing Kotlin in Kotlin at JetBrains and leading Kotlin/Wasm. We are going to have a quick journey around Kotlin/Wasm. We will see what the possibilities there are and also have a look at the inside.</description>
-    </item>
-    
-    <item>
-      <title>The huge potential of Kotlin/Wasm</title>
-      <link>https://seb.deleuze.fr/the-huge-potential-of-kotlin-wasm/</link>
-      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/the-huge-potential-of-kotlin-wasm/</guid>
-      <description>Last week, a preview release of Kotlin/Wasm was announced as part of Kotlin 1.8.20-Beta. For me who has been nudging the Kotlin team to work on WebAssembly support since June 2016, that&amp;rsquo;s a huge step forward even if providing WebAssembly first class support for Kotlin will be a long journey.
+        </item>
+        
+        <item>
+            <title>The huge potential of Kotlin/Wasm</title>
+            <link>/the-huge-potential-of-kotlin-wasm/</link>
+            <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+            
+            <guid>/the-huge-potential-of-kotlin-wasm/</guid>
+            <description>Last week, a preview release of Kotlin/Wasm was announced as part of Kotlin 1.8.20-Beta. For me who has been nudging the Kotlin team to work on WebAssembly support since June 2016, that&amp;rsquo;s a huge step forward even if providing WebAssembly first class support for Kotlin will be a long journey.
 I also decided recently to contribute actively by creating KoWasm, an experimental side project intended to provide WebAssembly Component Model and WASI support for Kotlin/Wasm, with the goal to see those features later supported out of the box.</description>
-    </item>
-    
-    <item>
-      <title>Kotlin 1.4 Online Event - State of Kotlin Support in Spring</title>
-      <link>https://seb.deleuze.fr/presentations/kotlin-1-4-event-state-kotlin-spring/</link>
-      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/kotlin-1-4-event-state-kotlin-spring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>KotlinConf 2019 - The State of Kotlin Support in Spring</title>
-      <link>https://seb.deleuze.fr/presentations/kotlinconf-2019-state-kotlin-spring/</link>
-      <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/kotlinconf-2019-state-kotlin-spring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Devoxx 2019 - Deepdive into Reactive Spring with Coroutines and Kotlin Flow</title>
-      <link>https://seb.deleuze.fr/presentations/devoxx-2019-spring-kotlin-coroutines/</link>
-      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/devoxx-2019-spring-kotlin-coroutines/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Les Cast Codeurs 201 - Interview Kotlin</title>
-      <link>https://seb.deleuze.fr/podcasts/lcc-201-kotlin/</link>
-      <pubDate>Sat, 22 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/podcasts/lcc-201-kotlin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Devoxx 2018 - Spring Boot with Kotlin, functional configuration and GraalVM</title>
-      <link>https://seb.deleuze.fr/presentations/devoxx-2018-spring-kotlin-graalvm/</link>
-      <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/devoxx-2018-spring-kotlin-graalvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My call for Kotlin as a major frontend language</title>
-      <link>https://seb.deleuze.fr/kotlin-major-frontend-language/</link>
-      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/kotlin-major-frontend-language/</guid>
-      <description>I try to push for quite a long time for first class support for WebAssembly in Kotlin because I really believe that frontend development is a domain where Kotlin can be as strong as in mobile, and because this is something that would also help to increase even more the adoption on server-side.
+        </item>
+        
+        <item>
+            <title>Kotlin 1.4 Online Event - State of Kotlin Support in Spring</title>
+            <link>https://www.youtube.com/watch?v=dSIIZastK58</link>
+            <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=dSIIZastK58</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>KotlinConf 2019 - The State of Kotlin Support in Spring</title>
+            <link>https://www.youtube.com/watch?v=U4Q13TlAUE8</link>
+            <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=U4Q13TlAUE8</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Devoxx 2019 - Deepdive into Reactive Spring with Coroutines and Kotlin Flow</title>
+            <link>https://www.youtube.com/watch?v=BoidEr_ZCGc</link>
+            <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=BoidEr_ZCGc</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Les Cast Codeurs 201 - Interview Kotlin</title>
+            <link>https://lescastcodeurs.com/2018/12/22/lcc-201-interview-kotlin-avec-cedric-beust-et-sebastien-deleuze/</link>
+            <pubDate>Sat, 22 Dec 2018 00:00:00 +0000</pubDate>
+            
+            <guid>https://lescastcodeurs.com/2018/12/22/lcc-201-interview-kotlin-avec-cedric-beust-et-sebastien-deleuze/</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Devoxx 2018 - Spring Boot with Kotlin, functional configuration and GraalVM</title>
+            <link>https://www.youtube.com/watch?v=oN3QOsZ1KAw</link>
+            <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=oN3QOsZ1KAw</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>My call for Kotlin as a major frontend language</title>
+            <link>/kotlin-major-frontend-language/</link>
+            <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+            
+            <guid>/kotlin-major-frontend-language/</guid>
+            <description>I try to push for quite a long time for first class support for WebAssembly in Kotlin because I really believe that frontend development is a domain where Kotlin can be as strong as in mobile, and because this is something that would also help to increase even more the adoption on server-side.
 I truly appreciate all the work already done by Kotlin/JS and Kotlin/Native teams. The dead code elimination tool and the initial WebAssembly support in Kotlin/Native are important steps in the right direction.</description>
-    </item>
-    
-    <item>
-      <title>KotlinConf 2018 - Closing Panel</title>
-      <link>https://seb.deleuze.fr/presentations/kotlinconf-2018-closing-panel/</link>
-      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/kotlinconf-2018-closing-panel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spring I/O 2018 - Bootiful Kotlin</title>
-      <link>https://seb.deleuze.fr/presentations/springio-bootiful-kotlin/</link>
-      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/springio-bootiful-kotlin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Talking Kotlin - Spring Boot</title>
-      <link>https://seb.deleuze.fr/podcasts/talking-kotlin-spring-boot/</link>
-      <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/podcasts/talking-kotlin-spring-boot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Devoxx 2016 - Developing Reactive applications</title>
-      <link>https://seb.deleuze.fr/presentations/devoxx-2016-reactive/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://seb.deleuze.fr/presentations/devoxx-2016-reactive/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+        </item>
+        
+        <item>
+            <title>KotlinConf 2018 - Closing Panel</title>
+            <link>https://www.youtube.com/watch?v=heqjfkS4z2I</link>
+            <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=heqjfkS4z2I</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Spring I/O 2018 - Bootiful Kotlin</title>
+            <link>https://www.youtube.com/watch?v=btNIey_2Zdw</link>
+            <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=btNIey_2Zdw</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Talking Kotlin - Spring Boot</title>
+            <link>https://talkingkotlin.com/spring-boot-with-sebastian-delueze/</link>
+            <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
+            
+            <guid>https://talkingkotlin.com/spring-boot-with-sebastian-delueze/</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Devoxx 2016 - Developing Reactive applications</title>
+            <link>https://www.youtube.com/watch?v=Cj4foJzPF80</link>
+            <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.youtube.com/watch?v=Cj4foJzPF80</guid>
+            <description></description>
+        </item>
+        
+    </channel>
 </rss>
