@@ -6,7 +6,16 @@
     <description>Recent content on seb.deleuze.fr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CDS with Spring Framework 6.1</title>
+      <link>https://seb.deleuze.fr/cds-with-spring-framework-6.1/</link>
+      <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://seb.deleuze.fr/cds-with-spring-framework-6.1/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Runtime efficiency with Spring (today and tomorrow)</title>
       <link>https://seb.deleuze.fr/runtime-efficiency-with-spring/</link>
