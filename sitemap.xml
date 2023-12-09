@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://seb.deleuze.fr/posts/</loc>
-    <lastmod>2023-10-16T00:00:00+00:00</lastmod>
+    <loc>https://seb.deleuze.fr/cds-with-spring-framework-6.1/</loc>
+    <lastmod>2023-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://seb.deleuze.fr/runtime-efficiency-with-spring/</loc>
-    <lastmod>2023-10-16T00:00:00+00:00</lastmod>
+    <loc>https://seb.deleuze.fr/posts/</loc>
+    <lastmod>2023-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/</loc>
-    <lastmod>2023-10-16T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/tags/spring/</loc>
-    <lastmod>2023-10-16T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/tags/</loc>
+    <lastmod>2023-12-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/runtime-efficiency-with-spring/</loc>
     <lastmod>2023-10-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/presentations/devoxx-2023-graalvm-panel/</loc>
