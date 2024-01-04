@@ -1,6 +1,20 @@
 <html>
 <head>
 <title>Test</title>
+<script>
+    async function main() {
+        await fetch('https://localhost:8443/put', {
+        method: 'PUT',
+        credentials: 'include'});
+    }
+
+    (async () => {
+        try {
+            await main();
+        } catch (e) {
+        }
+    })();
+</script>
 </head>
 <body>
 Tests related to <a href="https://developer.chrome.com/blog/private-network-access-preflight/">Private Network Access</a>
