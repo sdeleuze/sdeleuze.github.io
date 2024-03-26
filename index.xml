@@ -6,7 +6,16 @@
         <description>Recent content on seb.deleuze.fr</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>The terraforming of the WebAssembly landscape</title>
+            <link>/the-terraforming-of-webassembly-landscape/</link>
+            <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+            
+            <guid>/the-terraforming-of-webassembly-landscape/</guid>
+            <description>Last week, I took a few days off to go to Barcelona to attend Wasm I/O 2024 conference. Like last year, the conference was amazing and was still more an event for companies and individuals building the Wasm ecosystem rather than using it, but my feeling is that we are approaching a point where the technology reaches the wider crowd of application and library developers. While WebAssembly can potentially be used with any language, any hardware, for any workload, I would like to share the trends and patterns I see in the ecosystem based on the various talks I saw and discussions I had at the conference.</description>
+        </item>
+        
         <item>
             <title>CDS with Spring Framework 6.1</title>
             <link>https://spring.io/blog/2023/12/04/cds-with-spring-framework-6-1</link>
