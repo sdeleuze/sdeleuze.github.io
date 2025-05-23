@@ -6,22 +6,22 @@
         <description>Recent content in Tags on seb.deleuze.fr</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/tags/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/tags/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>spring</title>
+            <link>/tags/spring/</link>
+            <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+            
+            <guid>/tags/spring/</guid>
+            <description></description>
+        </item>
+        
         <item>
             <title>webassembly</title>
             <link>/tags/webassembly/</link>
             <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
             
             <guid>/tags/webassembly/</guid>
-            <description></description>
-        </item>
-        
-        <item>
-            <title>spring</title>
-            <link>/tags/spring/</link>
-            <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
-            
-            <guid>/tags/spring/</guid>
             <description></description>
         </item>
         
