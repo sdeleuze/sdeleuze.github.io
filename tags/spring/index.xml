@@ -6,7 +6,16 @@
         <description>Recent content in spring on seb.deleuze.fr</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>Introducing Jackson 3 support in Spring</title>
+            <link>https://spring.io/blog/2025/10/07/introducing-jackson-3-support-in-spring</link>
+            <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
+            
+            <guid>https://spring.io/blog/2025/10/07/introducing-jackson-3-support-in-spring</guid>
+            <description></description>
+        </item>
+        
         <item>
             <title>Null Safety in Spring applications with JSpecify and NullAway</title>
             <link>https://spring.io/blog/2025/03/10/null-safety-in-spring-apps-with-jspecify-and-null-away</link>

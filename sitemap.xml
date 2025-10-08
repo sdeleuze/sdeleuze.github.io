@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://seb.deleuze.fr/null-safety-in-spring-apps-with-jspecify-and-null-away/</loc>
-    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
+    <loc>https://seb.deleuze.fr/introducing-jackson-3-support-in-spring/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/posts/</loc>
-    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/</loc>
-    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/tags/spring/</loc>
-    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/tags/</loc>
+    <lastmod>2025-10-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://seb.deleuze.fr/null-safety-in-spring-apps-with-jspecify-and-null-away/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://seb.deleuze.fr/the-terraforming-of-webassembly-landscape/</loc>
