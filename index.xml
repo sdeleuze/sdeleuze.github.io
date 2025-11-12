@@ -6,7 +6,16 @@
         <description>Recent content on seb.deleuze.fr</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Wed, 12 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>Null-Safe applications with Spring Boot 4</title>
+            <link>https://spring.io/blog/2025/11/12/null-safe-applications-with-spring-boot-4</link>
+            <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+            
+            <guid>https://spring.io/blog/2025/11/12/null-safe-applications-with-spring-boot-4</guid>
+            <description></description>
+        </item>
+        
         <item>
             <title>Introducing Jackson 3 support in Spring</title>
             <link>https://spring.io/blog/2025/10/07/introducing-jackson-3-support-in-spring</link>
