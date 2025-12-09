@@ -164,5 +164,15 @@ I truly appreciate all the work already done by Kotlin/JS and Kotlin/Native team
             <description></description>
         </item>
         
+        <item>
+            <title>Goodbye Spring Fu</title>
+            <link>/goodbye-spring-fu/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>/goodbye-spring-fu/</guid>
+            <description>Goodbye Spring Fu, the experimental project I created several years ago to explore more efficient Spring applications configured with DSLs has been archived. We learnt a lot from it and it has contributed directly or indirectly to the introduction of multiple Spring features.
+The first reason why we archive it now is the release of Spring Boot 4 and the introduction of modular auto-configurations, which are more efficient, allow enabling features more explicitly with less unwanted side effects.</description>
+        </item>
+        
     </channel>
 </rss>
