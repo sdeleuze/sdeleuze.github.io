@@ -6,7 +6,17 @@
         <description>Recent content in Posts on seb.deleuze.fr</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Wed, 12 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/posts/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/posts/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>Goodbye Spring Fu</title>
+            <link>/goodbye-spring-fu/</link>
+            <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+            
+            <guid>/goodbye-spring-fu/</guid>
+            <description>Goodbye Spring Fu, the experimental project I created several years ago to explore more efficient Spring applications configured with DSLs has been archived. We learnt a lot from it and it has contributed directly or indirectly to the introduction of multiple Spring features.
+The first reason why we archive it now is the release of Spring Boot 4 and the introduction of modular auto-configurations, which are more efficient, allow enabling features more explicitly with less unwanted side effects.</description>
+        </item>
+        
         <item>
             <title>Null-Safe applications with Spring Boot 4</title>
             <link>https://spring.io/blog/2025/11/12/null-safe-applications-with-spring-boot-4</link>
@@ -162,16 +172,6 @@ I truly appreciate all the work already done by Kotlin/JS and Kotlin/Native team
             
             <guid>https://spring.io/blog/2014/12/02/latest-jackson-integration-improvements-in-spring#jackson-modules</guid>
             <description></description>
-        </item>
-        
-        <item>
-            <title>Goodbye Spring Fu</title>
-            <link>/goodbye-spring-fu/</link>
-            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-            
-            <guid>/goodbye-spring-fu/</guid>
-            <description>Goodbye Spring Fu, the experimental project I created several years ago to explore more efficient Spring applications configured with DSLs has been archived. We learnt a lot from it and it has contributed directly or indirectly to the introduction of multiple Spring features.
-The first reason why we archive it now is the release of Spring Boot 4 and the introduction of modular auto-configurations, which are more efficient, allow enabling features more explicitly with less unwanted side effects.</description>
         </item>
         
     </channel>
