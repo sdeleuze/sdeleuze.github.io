@@ -6,7 +6,16 @@
         <description>Recent content in Posts on seb.deleuze.fr</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/posts/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/posts/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>Next level Kotlin support in Spring Boot 4</title>
+            <link>https://spring.io/blog/2025/12/18/next-level-kotlin-support-in-spring-boot-4</link>
+            <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
+            
+            <guid>https://spring.io/blog/2025/12/18/next-level-kotlin-support-in-spring-boot-4</guid>
+            <description></description>
+        </item>
+        
         <item>
             <title>Goodbye Spring Fu</title>
             <link>/goodbye-spring-fu/</link>
