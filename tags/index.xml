@@ -8,7 +8,7 @@
         <language>en</language>
         <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/tags/index.xml" rel="self" type="application/rss+xml" />
         <item>
-            <title>kotlin</title>
+            <title>Kotlin</title>
             <link>/tags/kotlin/</link>
             <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
             
@@ -17,7 +17,7 @@
         </item>
         
         <item>
-            <title>spring</title>
+            <title>Spring</title>
             <link>/tags/spring/</link>
             <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
             
@@ -26,7 +26,7 @@
         </item>
         
         <item>
-            <title>webassembly</title>
+            <title>Webassembly</title>
             <link>/tags/webassembly/</link>
             <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
             
@@ -35,7 +35,7 @@
         </item>
         
         <item>
-            <title>efficiency</title>
+            <title>Efficiency</title>
             <link>/tags/efficiency/</link>
             <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
             
@@ -44,7 +44,7 @@
         </item>
         
         <item>
-            <title>graalvm</title>
+            <title>Graalvm</title>
             <link>/tags/graalvm/</link>
             <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
             
@@ -53,7 +53,7 @@
         </item>
         
         <item>
-            <title>crac</title>
+            <title>Crac</title>
             <link>/tags/crac/</link>
             <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
             

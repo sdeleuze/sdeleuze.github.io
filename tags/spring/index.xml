@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>spring on seb.deleuze.fr</title>
+        <title>Spring on seb.deleuze.fr</title>
         <link>https://seb.deleuze.fr/tags/spring/</link>
-        <description>Recent content in spring on seb.deleuze.fr</description>
+        <description>Recent content in Spring on seb.deleuze.fr</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://seb.deleuze.fr/tags/spring/index.xml" rel="self" type="application/rss+xml" />
@@ -22,8 +22,8 @@
             <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
             
             <guid>/goodbye-spring-fu/</guid>
-            <description>Goodbye Spring Fu, the experimental project I created several years ago to explore more efficient Spring applications configured with DSLs has been archived. We learnt a lot from it and it has contributed directly or indirectly to the introduction of multiple Spring features.
-The first reason why we archive it now is the release of Spring Boot 4 and the introduction of modular auto-configurations, which are more efficient, allow enabling features more explicitly with less unwanted side effects.</description>
+            <description>&lt;p&gt;Goodbye Spring Fu, the experimental project I created several years ago to explore more efficient Spring applications configured with DSLs &lt;a href=&#34;https://github.com/spring-attic/spring-fu&#34;&gt;has been archived&lt;/a&gt;. We learnt a lot from it and it has contributed directly or indirectly to the introduction of multiple Spring features.&lt;/p&gt;
+&lt;p&gt;The first reason why we archive it now is the release of Spring Boot 4 and the introduction of &lt;a href=&#34;https://spring.io/blog/2025/10/28/modularizing-spring-boot&#34;&gt;modular auto-configurations&lt;/a&gt;, which are more efficient, allow enabling features more explicitly with less unwanted side effects.&lt;/p&gt;</description>
         </item>
         
         <item>

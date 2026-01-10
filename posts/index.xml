@@ -22,8 +22,8 @@
             <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
             
             <guid>/goodbye-spring-fu/</guid>
-            <description>Goodbye Spring Fu, the experimental project I created several years ago to explore more efficient Spring applications configured with DSLs has been archived. We learnt a lot from it and it has contributed directly or indirectly to the introduction of multiple Spring features.
-The first reason why we archive it now is the release of Spring Boot 4 and the introduction of modular auto-configurations, which are more efficient, allow enabling features more explicitly with less unwanted side effects.</description>
+            <description>&lt;p&gt;Goodbye Spring Fu, the experimental project I created several years ago to explore more efficient Spring applications configured with DSLs &lt;a href=&#34;https://github.com/spring-attic/spring-fu&#34;&gt;has been archived&lt;/a&gt;. We learnt a lot from it and it has contributed directly or indirectly to the introduction of multiple Spring features.&lt;/p&gt;
+&lt;p&gt;The first reason why we archive it now is the release of Spring Boot 4 and the introduction of &lt;a href=&#34;https://spring.io/blog/2025/10/28/modularizing-spring-boot&#34;&gt;modular auto-configurations&lt;/a&gt;, which are more efficient, allow enabling features more explicitly with less unwanted side effects.&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -59,7 +59,7 @@ The first reason why we archive it now is the release of Spring Boot 4 and the i
             <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
             
             <guid>/the-terraforming-of-webassembly-landscape/</guid>
-            <description>Last week, I took a few days off to go to Barcelona to attend Wasm I/O 2024 conference. Like last year, the conference was amazing and was still more an event for companies and individuals building the Wasm ecosystem rather than using it, but my feeling is that we are approaching a point where the technology reaches the wider crowd of application and library developers. While WebAssembly can potentially be used with any language, any hardware, for any workload, I would like to share the trends and patterns I see in the ecosystem based on the various talks I saw and discussions I had at the conference.</description>
+            <description>&lt;p&gt;Last week, I took a few days off to go to Barcelona to attend &lt;a href=&#34;https://wasm.io/&#34;&gt;Wasm I/O&lt;/a&gt; 2024 conference. Like last year, the conference was amazing and was still more an event for companies and individuals building the Wasm ecosystem rather than using it, but my feeling is that we are approaching a point where the technology reaches the wider crowd of application and library developers. While WebAssembly can potentially be used with any language, any hardware, for any workload, I would like to share the trends and patterns I see in the ecosystem based on the various talks I saw and discussions I had at the conference.&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -86,8 +86,17 @@ The first reason why we archive it now is the release of Spring Boot 4 and the i
             <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
             
             <guid>/introducing-kotlin-wasm/</guid>
-            <description>This blog post is a refined transcription of the presentation Zalim Bashorov and I gave at Wasm I/O 2023 to introduce Kotlin/Wasm. The recording is also available on YouTube.
-Intro Link to heading Zalim Hi, everyone! I’m Zalim. I’m writing Kotlin in Kotlin at JetBrains and leading Kotlin/Wasm. We are going to have a quick journey around Kotlin/Wasm. We will see what the possibilities there are and also have a look at the inside.</description>
+            <description>&lt;p&gt;This blog post is a refined transcription of the presentation Zalim Bashorov and I gave at &lt;a href=&#34;https://wasm.io/&#34;&gt;Wasm I/O&lt;/a&gt; 2023 to introduce &lt;a href=&#34;http://kotl.in/wasm/&#34;&gt;Kotlin/Wasm&lt;/a&gt;. The recording is also available on &lt;a href=&#34;https://www.youtube.com/watch?v=LCtMC_IVCKo&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;intro&#34;&gt;
+  Intro
+  &lt;a class=&#34;heading-link&#34; href=&#34;#intro&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://seb.deleuze.fr/images/wasmio23/slide1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Zalim&lt;/strong&gt; Hi, everyone! I’m &lt;a href=&#34;http://twitter.com/bashorov&#34;&gt;Zalim&lt;/a&gt;. I’m writing Kotlin in Kotlin at JetBrains and leading Kotlin/Wasm. We are going to have a quick journey around Kotlin/Wasm. We will see what the possibilities there are and also have a look at the inside.&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -105,8 +114,8 @@ Intro Link to heading Zalim Hi, everyone! I’m Zalim. I’m writing Kotlin in K
             <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
             
             <guid>/the-huge-potential-of-kotlin-wasm/</guid>
-            <description>Last week, a preview release of Kotlin/Wasm was announced as part of Kotlin 1.8.20-Beta. For me who has been nudging the Kotlin team to work on WebAssembly support since June 2016, that&amp;rsquo;s a huge step forward even if providing WebAssembly first class support for Kotlin will be a long journey.
-I also decided recently to contribute actively by creating KoWasm, an experimental side project intended to provide WebAssembly Component Model and WASI support for Kotlin/Wasm, with the goal to see those features later supported out of the box.</description>
+            <description>&lt;p&gt;Last week, a preview release of Kotlin/Wasm was announced as part of &lt;a href=&#34;https://kotl.in/1-8-20-Beta#new-kotlin-wasm-target&#34;&gt;Kotlin 1.8.20-Beta&lt;/a&gt;. For me who has been nudging the Kotlin team to work on WebAssembly support &lt;a href=&#34;https://discuss.kotlinlang.org/t/webassembly-support/1722&#34;&gt;since June 2016&lt;/a&gt;, that&amp;rsquo;s a huge step forward even if providing WebAssembly first class support for Kotlin will be a long journey.&lt;/p&gt;
+&lt;p&gt;I also decided recently to contribute actively by creating &lt;a href=&#34;https://github.com/kowasm/kowasm&#34;&gt;KoWasm&lt;/a&gt;, an experimental side project intended to provide WebAssembly Component Model and WASI support for Kotlin/Wasm, with the goal to see those features later supported out of the box.&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -115,8 +124,12 @@ I also decided recently to contribute actively by creating KoWasm, an experiment
             <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
             
             <guid>/webassembly-impact-on-programming-languages/</guid>
-            <description>First some context: WebAssembly Component Model (WIT) is maturing in order to standardize reusable components. When ready, WIT components will likely be published in a repository (like npm or Maven Central but for Wasm) in a polyglot fashion targeting any language that supports Wasm.
-Wasi (the Posix of WebAssembly that allows to use it outside of the browser) is currently rebased on top of WIT (tentatively called Wasi Preview 2). With Wasi, Wasm could become a major way to deploy workloads on Edge and Cloud platforms.</description>
+            <description>&lt;p&gt;First some context: WebAssembly Component Model (WIT) is maturing in order to standardize reusable components. When ready, WIT components will likely be published in a repository (like &lt;a href=&#34;https://www.npmjs.com/&#34;&gt;npm&lt;/a&gt; or &lt;a href=&#34;https://search.maven.org/&#34;&gt;Maven Central&lt;/a&gt; but for Wasm) in a polyglot fashion targeting any language that supports Wasm.&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/phodPLY8zNE?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;Wasi (the Posix of WebAssembly that allows to use it outside of the browser) is currently rebased on top of WIT (tentatively called Wasi Preview 2). With Wasi, Wasm could become a major way to deploy workloads on Edge and Cloud platforms. You will find more information on &lt;a href=&#34;https://github.com/bytecodealliance/wit-bindgen&#34;&gt;https://github.com/bytecodealliance/wit-bindgen&lt;/a&gt;.&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -152,8 +165,8 @@ Wasi (the Posix of WebAssembly that allows to use it outside of the browser) is 
             <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
             
             <guid>/kotlin-major-frontend-language/</guid>
-            <description>I try to push for quite a long time for first class support for WebAssembly in Kotlin because I really believe that frontend development is a domain where Kotlin can be as strong as in mobile, and because this is something that would also help to increase even more the adoption on server-side.
-I truly appreciate all the work already done by Kotlin/JS and Kotlin/Native teams. The dead code elimination tool and the initial WebAssembly support in Kotlin/Native are important steps in the right direction.</description>
+            <description>&lt;p&gt;I try to push for quite a long time for &lt;a href=&#34;https://discuss.kotlinlang.org/t/webassembly-support/1722&#34;&gt;first class support for WebAssembly in Kotlin&lt;/a&gt; because I really believe that frontend development is a domain where Kotlin can be as strong as in mobile, and because this is something that would also help to increase even more the adoption on server-side.&lt;/p&gt;
+&lt;p&gt;I truly appreciate all the work already done by Kotlin/JS and Kotlin/Native teams. The &lt;a href=&#34;https://kotlinlang.org/docs/reference/javascript-dce.html&#34;&gt;dead code elimination tool&lt;/a&gt; and the initial WebAssembly support in Kotlin/Native are important steps in the right direction. But I believe that Kotlin needs now to make frontend a real priority to take it to the next level.&lt;/p&gt;</description>
         </item>
         
         <item>
